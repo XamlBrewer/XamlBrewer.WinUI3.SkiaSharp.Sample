@@ -1,0 +1,29 @@
+<Page x:Class="XamlBrewer.WinUI3.SkiaSharp.Sample.Views.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Background="Transparent">
+
+    <Grid>
+        <!-- SkiaSharp Logo -->
+        <Image Source="/Assets/SkiaSharpLogo.png"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Left"
+               Height="48" />
+
+        <Grid x:Name="MyMap"
+                           VerticalAlignment="Stretch"
+                           HorizontalAlignment="Stretch"
+                           Margin="0 0 0 60" />
+
+        <TextBlock Text="Hint: panning and zooming is active"
+                   FontWeight="SemiBold"
+                   HorizontalAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0 0 0 32" />
+
+    </Grid>
+</Page>

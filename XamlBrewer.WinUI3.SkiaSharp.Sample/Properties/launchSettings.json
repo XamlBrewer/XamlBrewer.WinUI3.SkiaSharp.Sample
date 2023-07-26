@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "XamlBrewer.WinUI3.SkiaSharp.Sample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "XamlBrewer.WinUI3.SkiaSharp.Sample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
