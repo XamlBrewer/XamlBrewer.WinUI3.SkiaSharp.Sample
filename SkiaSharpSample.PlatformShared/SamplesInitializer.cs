@@ -7,14 +7,15 @@ using System.Runtime.InteropServices;
 using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.System;
-//using Uno.Foundation;
+using Uno.Foundation;
 #endif
-#if WINDOWS_UWP
+#if WINDOWS_UWP || __WINUI__
 using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.System;
+using System.Diagnostics;
 #if !__WASM__
-using Launcher = Xamarin.Essentials.Launcher;
+//using Launcher = Xamarin.Essentials.Launcher;
 #endif
 #elif __MACOS__
 using AppKit;
@@ -48,7 +49,7 @@ namespace SkiaSharpSample
 		{
 			var fontName = "content-font.ttf";
 
-#if WINDOWS_UWP || HAS_UNO_SKIA
+#if WINDOWS_UWP || HAS_UNO_SKIA || __WINUI__
 			var pkg = Package.Current.InstalledLocation.Path;
 			var path = Path.Combine(pkg, "Assets", "Media", fontName);
 #elif __IOS__ || __TVOS__ || __MACOS__
@@ -85,9 +86,9 @@ namespace SkiaSharpSample
 			var localStorage = FileSystem.AppDataDirectory;
 #elif __MACOS__
 			var localStorage = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-//#elif __DESKTOP__
-//			var localStorage = System.Windows.Forms.Application.LocalUserAppDataPath;
-#elif __WASM__ || HAS_UNO_SKIA
+#elif __DESKTOP__
+			var localStorage = System.Windows.Forms.Application.LocalUserAppDataPath;
+#elif __WASM__ || HAS_UNO_SKIA || __WINUI__
 			var localStorage = ApplicationData.Current.LocalFolder.Path;
 #endif
 
@@ -116,6 +117,16 @@ namespace SkiaSharpSample
 			}
 #elif __DESKTOP__
 			Process.Start(path);
+#elif __WINUI__
+            var process = new Process
+            {
+                StartInfo = new ProcessStartInfo(path)
+                {
+                    UseShellExecute = true
+                }
+            };
+
+            process.Start();
 #elif __WASM__
 			var data = File.ReadAllBytes(path);
 			var gch = GCHandle.Alloc(data, GCHandleType.Pinned);
@@ -129,6 +140,6 @@ namespace SkiaSharpSample
 				gch.Free();
 			}
 #endif
-		}
-	}
+        }
+    }
 }

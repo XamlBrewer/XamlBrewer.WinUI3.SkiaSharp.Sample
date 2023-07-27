@@ -85,22 +85,22 @@
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <DefineConstants>$(DefineConstants);__DESKTOP__;HAS_UNO_SKIA</DefineConstants>
+    <DefineConstants>$(DefineConstants);__WINUI__</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <DefineConstants>$(DefineConstants);__DESKTOP__;HAS_UNO_SKIA</DefineConstants>
+    <DefineConstants>$(DefineConstants);__WINUI__</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
-    <DefineConstants>$(DefineConstants);__DESKTOP__;HAS_UNO_SKIA</DefineConstants>
+    <DefineConstants>$(DefineConstants);__WINUI__</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-    <DefineConstants>$(DefineConstants);__DESKTOP__;HAS_UNO_SKIA</DefineConstants>
+    <DefineConstants>$(DefineConstants);__WINUI__</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <DefineConstants>$(DefineConstants);__DESKTOP__;HAS_UNO_SKIA</DefineConstants>
+    <DefineConstants>$(DefineConstants);__WINUI__</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <DefineConstants>$(DefineConstants);__DESKTOP__</DefineConstants>
+    <DefineConstants>$(DefineConstants);__WINUI__</DefineConstants>
   </PropertyGroup>
   <Import Project="..\SkiaSharpSample.Shared\SkiaSharpSample.Shared.projitems" Label="Shared" />
   <Import Project="..\SkiaSharpSample.PlatformShared\SkiaSharpSample.PlatformShared.projitems" Label="Shared" />
