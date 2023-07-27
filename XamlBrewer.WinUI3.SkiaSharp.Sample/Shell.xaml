@@ -27,7 +27,7 @@
             </NavigationView.PaneCustomContent>-->
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Hello World"
-                                    Tag="XamlBrewer.WinUI3.SkiaSharp.Sample.Views.HomePage"
+                                    Tag="XamlBrewer.WinUI3.SkiaSharp.Sample.HomePage"
                                     ToolTipService.ToolTip="Hi">
                     <NavigationViewItem.Icon>
                         <BitmapIcon UriSource="/Assets/Home.png"
@@ -35,7 +35,7 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem Content="Gallery"
-                                    Tag="XamlBrewer.WinUI3.SkiaSharp.Sample.Views.GalleryPage"
+                                    Tag="XamlBrewer.WinUI3.SkiaSharp.Sample.GalleryPage"
                                     ToolTipService.ToolTip="Samples">
                     <NavigationViewItem.Icon>
                         <BitmapIcon UriSource="/Assets/Gallery.png"
@@ -45,7 +45,7 @@
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
                 <NavigationViewItem Content="About"
-                                    Tag="XamlBrewer.WinUI3.SkiaSharp.Sample.Views.AboutPage">
+                                    Tag="XamlBrewer.WinUI3.SkiaSharp.Sample.AboutPage">
                     <NavigationViewItem.Icon>
                         <BitmapIcon UriSource="/Assets/About.png"
                                     ShowAsMonochrome="False" />

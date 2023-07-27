@@ -1,4 +1,4 @@
-﻿<Page x:Class="XamlBrewer.WinUI3.SkiaSharp.Sample.Views.AboutPage"
+﻿<Page x:Class="XamlBrewer.WinUI3.SkiaSharp.Sample.AboutPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,7 +9,7 @@
     <Grid Margin="40 40 20 80"
           ColumnSpacing="0"
           RowSpacing="0">
-        <TextBlock FontSize="20">
+        <!--<TextBlock FontSize="20">
             <Run Text="Demonstrates using the " /><Hyperlink NavigateUri="https://SkiaSharp.com/">SkiaSharp</Hyperlink><Run Text=" map component in a WinUI 3 Desktop application:" />
             <LineBreak />
             <Run>* Stand-alone WinUI 3 samples from their own repository:</Run><LineBreak />
@@ -17,6 +17,6 @@
             <Run Text="  * Common samples" /><LineBreak />
             <LineBreak />
             <Run>This app references the NuGet packages instead of the sources of SkiaSharp's multi-platform solution.</Run><LineBreak />
-        </TextBlock>
+        </TextBlock>-->
     </Grid>
 </Page>

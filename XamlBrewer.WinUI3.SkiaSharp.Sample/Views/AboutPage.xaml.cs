@@ -1,6 +1,6 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-namespace XamlBrewer.WinUI3.SkiaSharp.Sample.Views
+namespace XamlBrewer.WinUI3.SkiaSharp.Sample
 {
     public sealed partial class AboutPage : Page
     {

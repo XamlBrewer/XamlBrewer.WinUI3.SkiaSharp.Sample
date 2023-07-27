@@ -3,7 +3,6 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using XamlBrewer.WinUI3.SkiaSharp.Sample.Views;
 using XamlBrewer.WinUI3.Services;
 
 namespace XamlBrewer.WinUI3.SkiaSharp.Sample

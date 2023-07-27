@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlBrewer.WinUI3.SkiaSharp.Sample", "XamlBrewer.WinUI3.SkiaSharp.Sample\XamlBrewer.WinUI3.SkiaSharp.Sample.csproj", "{D3072E68-754E-4B68-ACA0-62D5645221AC}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SkiaSharpSample.Shared", "SkiaSharpSample.Shared\SkiaSharpSample.Shared.shproj", "{D59B75F6-DB85-4629-B742-3E22611E226D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -39,5 +41,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D862829-B24D-4C56-A053-DAFCE0404F00}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SkiaSharpSample.Shared\SkiaSharpSample.Shared.projitems*{d3072e68-754e-4b68-aca0-62d5645221ac}*SharedItemsImports = 5
+		SkiaSharpSample.Shared\SkiaSharpSample.Shared.projitems*{d59b75f6-db85-4629-b742-3e22611e226d}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

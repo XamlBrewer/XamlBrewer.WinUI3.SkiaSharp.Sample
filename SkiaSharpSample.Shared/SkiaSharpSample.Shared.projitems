@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d59b75f6-db85-4629-b742-3e22611e226d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SkiaSharpSample.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Media\adobe-dng.dng" />
+    <None Include="$(MSBuildThisFileDirectory)Media\baby_tux.webp" />
+    <None Include="$(MSBuildThisFileDirectory)Media\logos.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Media\opacity.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Media\animated-heart.gif" />
+    <Content Include="$(MSBuildThisFileDirectory)Media\baboon.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Media\color-wheel.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Media\content-font.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)Media\embedded-font.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)Media\LottieLogo1.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Media\nine-patch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)PreserveAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleBackends.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleCategories.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleMedia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SamplePlatforms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SamplesManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BitmapAnnotationSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BitmapDecoderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BitmapLatticeSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BitmapScalerSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BitmapShaderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BitmapSubsetDecoderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BlurImageFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\BlurMaskFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ChainedImageFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ColorMatrixColorFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ColorTableColorFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ComposeShaderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\CreatePdfSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\CreateXpsSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\CustomFontsSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\DecodeGifFramesSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\DilateImageFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\DngDecoderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\DrawMatrixSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\DrawVerticesSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ErodeImageFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\FilledHeptagramSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\FractalPerlinNoiseShaderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\GradientSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\HighContrastColorFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\LumaColorFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\MagnifierImageFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ManipulatedBitmapShaderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\MeasureTextSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\PathBoundsSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\PathConicToQuadsSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\PathEffect2DPathSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\PathEffectsSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\PathMeasureSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\SkottieSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\SweepGradientShaderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\TextOnPathSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\TextSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\TextShapingSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ThreeDSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\ThreeDSamplePerspective.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\TurbulencePerlinNoiseShaderSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\UnicodeTextSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\XamagonSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\XferModeColorFilterSample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Samples\XfermodeSample.cs" />
+  </ItemGroup>
+</Project>

@@ -12,10 +12,14 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
+    <Content Remove="Assets\SkiaSharpLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Assets\About.png" />
     <None Remove="Assets\Beer.ico" />
     <None Remove="Assets\Gallery.png" />
     <None Remove="Assets\Home.png" />
+    <None Remove="Assets\SkiaSharpLogo.png" />
     <None Remove="Shell.xaml" />
     <None Remove="Views\AboutPage.xaml" />
     <None Remove="Views\GalleryPage.xaml" />
@@ -33,9 +37,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\SkiaSharpLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230502000" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230724000" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
+    <PackageReference Include="SkiaSharp.HarfBuzz" Version="2.88.3" />
+    <PackageReference Include="SkiaSharp.Skottie" Version="2.88.3" />
+    <PackageReference Include="SkiaSharp.Views.WinUI" Version="2.88.3" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -70,4 +83,5 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  <Import Project="..\SkiaSharpSample.Shared\SkiaSharpSample.Shared.projitems" Label="Shared" />
 </Project>
