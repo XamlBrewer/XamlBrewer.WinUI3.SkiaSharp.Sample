@@ -9,19 +9,41 @@
     <Import_RootNamespace>SkiaSharpSample.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Media\adobe-dng.dng" />
-    <None Include="$(MSBuildThisFileDirectory)Media\baby_tux.webp" />
-    <None Include="$(MSBuildThisFileDirectory)Media\logos.svg" />
-    <None Include="$(MSBuildThisFileDirectory)Media\opacity.svg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\adobe-dng.dng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\baby_tux.webp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\logos.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\opacity.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Media\animated-heart.gif" />
-    <Content Include="$(MSBuildThisFileDirectory)Media\baboon.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Media\color-wheel.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Media\content-font.ttf" />
-    <Content Include="$(MSBuildThisFileDirectory)Media\embedded-font.ttf" />
-    <Content Include="$(MSBuildThisFileDirectory)Media\LottieLogo1.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Media\nine-patch.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\animated-heart.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\baboon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\color-wheel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\content-font.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\embedded-font.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\LottieLogo1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Media\nine-patch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)PreserveAttribute.cs" />

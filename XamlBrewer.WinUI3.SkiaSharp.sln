@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlBrewer.WinUI3.SkiaSharp
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SkiaSharpSample.Shared", "SkiaSharpSample.Shared\SkiaSharpSample.Shared.shproj", "{D59B75F6-DB85-4629-B742-3E22611E226D}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SkiaSharpSample.PlatformShared", "SkiaSharpSample.PlatformShared\SkiaSharpSample.PlatformShared.shproj", "{ACC9B5E1-2371-402C-A69F-6C6BBB133435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -43,6 +45,8 @@ Global
 		SolutionGuid = {8D862829-B24D-4C56-A053-DAFCE0404F00}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SkiaSharpSample.PlatformShared\SkiaSharpSample.PlatformShared.projitems*{acc9b5e1-2371-402c-a69f-6c6bbb133435}*SharedItemsImports = 13
+		SkiaSharpSample.PlatformShared\SkiaSharpSample.PlatformShared.projitems*{d3072e68-754e-4b68-aca0-62d5645221ac}*SharedItemsImports = 5
 		SkiaSharpSample.Shared\SkiaSharpSample.Shared.projitems*{d3072e68-754e-4b68-aca0-62d5645221ac}*SharedItemsImports = 5
 		SkiaSharpSample.Shared\SkiaSharpSample.Shared.projitems*{d59b75f6-db85-4629-b742-3e22611e226d}*SharedItemsImports = 13
 	EndGlobalSection

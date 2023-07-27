@@ -40,7 +40,7 @@ namespace XamlBrewer.WinUI3.SkiaSharp.Sample
                 .OrderBy(g => g.Category == SampleCategories.Showcases ? string.Empty : g.Name)
                 .ToList();
 
-            //SamplesInitializer.Init();
+            SamplesInitializer.Init();
 
             samplesViewSource.Source = sampleGroups;
 
