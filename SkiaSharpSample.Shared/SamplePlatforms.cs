@@ -10,6 +10,7 @@ namespace SkiaSharpSample
 		OSX = 1 << 2,
 		WindowsDesktop = 1 << 3,
 		UWP = 1 << 4,
+		WinUI = 1 << 4,
 		tvOS = 1 << 5,
 
 		All = iOS | Android | OSX | WindowsDesktop | UWP | tvOS,

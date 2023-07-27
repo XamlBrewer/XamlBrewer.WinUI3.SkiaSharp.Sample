@@ -24,7 +24,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-
+            <!-- Sample List -->
             <ListView ItemsSource="{x:Bind samplesViewSource.View}"
                       SelectionChanged="OnSampleSelected">
                 <ListView.GroupStyle>
@@ -43,16 +43,11 @@
                 </ListView.ItemTemplate>
             </ListView>
 
+            <!-- Sample -->
             <Grid Tapped="OnSampleTapped"
                   Grid.Column="1">
                 <views:SKXamlCanvas x:Name="canvas"
-                                    Grid.Column="1"
                                     PaintSurface="OnPaintCanvas" />
-                <!--<views:SKSwapChainPanel x:Name="glview"
-                                    Grid.Row="1"
-                                    PaintSurface="OnPaintGL"
-                                    DrawInBackground="True"
-                                    Visibility="Collapsed" />-->
             </Grid>
         </Grid>
     </Grid>
