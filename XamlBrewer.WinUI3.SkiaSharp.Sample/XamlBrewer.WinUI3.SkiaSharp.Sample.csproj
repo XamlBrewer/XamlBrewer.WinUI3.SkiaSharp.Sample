@@ -14,6 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Remove="Assets\SkiaSharpLogo.png" />
+    <Content Remove="Assets\WinUI_Logo.svg" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Assets\About.png" />
@@ -21,6 +22,7 @@
     <None Remove="Assets\Gallery.png" />
     <None Remove="Assets\Home.png" />
     <None Remove="Assets\SkiaSharpLogo.png" />
+    <None Remove="Assets\WinUI_Logo.svg" />
     <None Remove="Shell.xaml" />
     <None Remove="Views\AboutPage.xaml" />
     <None Remove="Views\GalleryPage.xaml" />
@@ -41,6 +43,9 @@
     <EmbeddedResource Include="Assets\SkiaSharpLogo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WinUI_Logo.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +54,7 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
     <PackageReference Include="SkiaSharp.HarfBuzz" Version="2.88.3" />
     <PackageReference Include="SkiaSharp.Skottie" Version="2.88.3" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Views.WinUI" Version="2.88.3" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
