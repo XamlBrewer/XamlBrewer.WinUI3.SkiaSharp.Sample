@@ -1,4 +1,4 @@
-#XAML Brewer WinUI3 SkiaSharp Sample
+# XAML Brewer WinUI3 SkiaSharp Sample
 
 A stand-alone WinUI 3 app hosting a HelloWorld sample, and the official [SkiaSharp Samples Gallery](https://github.com/mono/SkiaSharp/tree/main/samples/Gallery).
 
