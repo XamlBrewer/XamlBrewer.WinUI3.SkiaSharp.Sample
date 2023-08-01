@@ -16,8 +16,8 @@ namespace XamlBrewer.WinUI3.SkiaSharp.Sample
     public sealed partial class GalleryPage : Page
     {
         private CancellationTokenSource cancellations;
-        private IList<SampleBase> samples;
-        private IList<GroupedSamples> sampleGroups;
+        private readonly IList<SampleBase> samples;
+        private readonly IList<GroupedSamples> sampleGroups;
         private SampleBase sample;
 
         public GalleryPage()

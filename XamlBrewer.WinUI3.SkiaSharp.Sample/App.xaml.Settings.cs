@@ -39,13 +39,10 @@ namespace XamlBrewer.WinUI3.SkiaSharp.Sample
                 ApplicationData.Current.LocalSettings.Values.Remove(settingsFile);
             }
 
-            if (Settings == null)
+            Settings ??= new Settings()
             {
-                Settings = new Settings()
-                {
-                    // Default values here ...
-                };
-            }
+                // Default values here ...
+            };
 
             Settings.PropertyChanged += Settings_PropertyChanged;
         }

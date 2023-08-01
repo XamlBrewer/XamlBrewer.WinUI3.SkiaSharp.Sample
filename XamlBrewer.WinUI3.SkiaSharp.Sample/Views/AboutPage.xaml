@@ -9,14 +9,11 @@
     <Grid Margin="40 40 20 80"
           ColumnSpacing="0"
           RowSpacing="0">
-        <!--<TextBlock FontSize="20">
-            <Run Text="Demonstrates using the " /><Hyperlink NavigateUri="https://SkiaSharp.com/">SkiaSharp</Hyperlink><Run Text=" map component in a WinUI 3 Desktop application:" />
+        <TextBlock FontSize="20">
+            <Run Text="Demonstrates using " /><Hyperlink NavigateUri="https://github.com/mono/SkiaSharp">SkiaSharp</Hyperlink><Run Text=" in a WinUI 3 Desktop application:" />
             <LineBreak />
-            <Run>* Stand-alone WinUI 3 samples from their own repository:</Run><LineBreak />
-            <Run Text="  * Getting started" /><LineBreak />
-            <Run Text="  * Common samples" /><LineBreak />
-            <LineBreak />
-            <Run>This app references the NuGet packages instead of the sources of SkiaSharp's multi-platform solution.</Run><LineBreak />
-        </TextBlock>-->
+            <Run Text="* Hello World displaying SVG file and text" /><LineBreak />
+            <Run Text="* All samples from the official " /><Hyperlink NavigateUri="https://github.com/mono/SkiaSharp/tree/main/samples/Gallery">Samples Gallery</Hyperlink><Run Text="." /><LineBreak />
+        </TextBlock>
     </Grid>
-</Page>
+</Page> 
