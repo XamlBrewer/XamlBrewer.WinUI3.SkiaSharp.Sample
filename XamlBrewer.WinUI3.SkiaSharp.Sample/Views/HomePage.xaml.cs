@@ -40,7 +40,7 @@ namespace XamlBrewer.WinUI3.SkiaSharp.Sample
             };
             var bounds = new SKRect();
             paint.MeasureText(text, ref bounds);
-            coord = new SKPoint(e.Info.Width / 2, (e.Info.Height + bounds.Height) / 2 ); // Origin = Bottom Left
+            coord = new SKPoint(e.Info.Width / 2, (e.Info.Height + bounds.Height) / 2); // Origin = Bottom Left
             canvas.DrawText(text, coord, paint);
 
             // Overlapping transparent SVG sample
