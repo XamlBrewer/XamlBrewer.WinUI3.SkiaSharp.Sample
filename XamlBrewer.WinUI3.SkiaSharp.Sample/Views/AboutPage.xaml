@@ -14,6 +14,7 @@
             <LineBreak />
             <Run Text="* Hello World displaying SVG file and text" /><LineBreak />
             <Run Text="* All samples from the official " /><Hyperlink NavigateUri="https://github.com/mono/SkiaSharp/tree/main/samples/Gallery">Samples Gallery</Hyperlink><Run Text="." /><LineBreak />
+            <Run Text="* A Pythagoras Tree sample demonstrating SKCanvas methods" /><LineBreak />
         </TextBlock>
     </Grid>
 </Page> 

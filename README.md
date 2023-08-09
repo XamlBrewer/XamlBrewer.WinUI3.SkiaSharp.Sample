@@ -1,6 +1,6 @@
 # XAML Brewer WinUI3 SkiaSharp Sample
 
-A stand-alone WinUI 3 app hosting a HelloWorld sample, and the official [SkiaSharp Samples Gallery](https://github.com/mono/SkiaSharp/tree/main/samples/Gallery).
+A stand-alone WinUI 3 app hosting a HelloWorld sample, the official [SkiaSharp Samples Gallery](https://github.com/mono/SkiaSharp/tree/main/samples/Gallery), and a Pythagoras Tree sample.
 
 <a href="https://www.buymeacoffee.com/xamlbrewer" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
@@ -13,3 +13,5 @@ A stand-alone WinUI 3 app hosting a HelloWorld sample, and the official [SkiaSha
 ![Screenshot](Assets/TextOnPath.png?raw=true)
 
 ![Screenshot](Assets/Heptagram.png?raw=true)
+
+![Screenshot](Assets/PythagorasPage.png?raw=true)
