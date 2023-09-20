@@ -31,36 +31,41 @@ namespace XamlBrewer.WinUI3.SkiaSharp.Sample
             canvas.Translate(e.Info.Width / 2, e.Info.Height - side);
 
             var r = new SKRect(0, 0, side, side);
-            DrawNode(canvas, paint, r, angle, 14);
+            DrawNode(canvas, paint, r, angle, 15);
         }
 
         private static void DrawNode(SKCanvas canvas, SKPaint paint, SKRect rect, float angle, int steps)
         {
+            // Recursion control
+            steps--;
             if (steps == 0)
             {
                 return;
             }
 
-            steps--;
-            canvas.Save();
+            // Trigonometrics
+            var sine = (float)Math.Sin(angle * 2 * Math.PI / 360);
+            var cosine = (float)Math.Cos(angle * 2 * Math.PI / 360);
+
+            // Trunk
             canvas.DrawRect(rect, paint);
-            canvas.Save();
 
-            var leftSide = (float)(rect.Width * Math.Cos(angle * 2 * Math.PI / 360));
-            canvas.Translate((float)(-leftSide * Math.Sin(angle * 2 * Math.PI / 360)), (float)(-leftSide * Math.Cos(angle * 2 * Math.PI / 360)));
+            // Left branch
+            canvas.Save();
+            var leftSide = (float)(rect.Width * cosine);
+            canvas.Translate((float)(-leftSide * sine), (float)(-leftSide * cosine));
             canvas.RotateDegrees(-angle);
-            var r = new SKRect(0, 0, leftSide, leftSide);
-            DrawNode(canvas, paint, r, angle, steps);
+            canvas.Scale(cosine);
+            DrawNode(canvas, paint, rect, angle, steps);
             canvas.Restore();
 
+            // Right branch
             canvas.Save();
-            var rightSide = (float)(rect.Width * Math.Sin(angle * 2 * Math.PI / 360));
-            canvas.Translate((float)((rightSide + leftSide) * Math.Cos(angle * 2 * Math.PI / 360)), (float)(-(rightSide + leftSide) * Math.Sin(angle * 2 * Math.PI / 360)));
+            var rightSide = (float)(rect.Width * sine);
+            canvas.Translate((float)((rightSide + leftSide) * cosine), (float)(-(rightSide + leftSide) * sine));
             canvas.RotateDegrees(90 - angle);
-            var r2 = new SKRect(0, 0, rightSide, rightSide);
-            DrawNode(canvas, paint, r2, angle, steps);
-            canvas.Restore();
-
+            canvas.Scale(sine);
+            DrawNode(canvas, paint, rect, angle, steps);
             canvas.Restore();
         }
     }
