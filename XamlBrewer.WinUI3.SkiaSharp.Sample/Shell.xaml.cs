@@ -10,8 +10,7 @@ namespace XamlBrewer.WinUI3.SkiaSharp.Sample
 
             InitializeComponent();
 
-            var appWindow = this.GetAppWindow();
-            appWindow.SetIcon("Assets/Beer.ico");
+            AppWindow.SetIcon("Assets/Beer.ico");
 
             (Application.Current as App).EnsureSettings();
             ApplyTheme();
